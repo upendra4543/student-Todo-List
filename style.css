@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    /* 1rem = 16px */
+}
+h1{
+    color: #fff;
+}
+.container{
+    height: 100vh;
+    background-color: rgb(2, 17, 30);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    margin-top: 4rem;
+    width: 90vw;
+    border-radius: 10px;
+    height: 90vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    overflow: scroll;
+}
+form input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+   button{
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+}
+ button:hover{
+    background-color:rgb(2, 58, 2) ;
+ }
+.add-button{
+       width: 100%;
+       padding: 10px 0px 0px 90px;
+}
+
+.add-button button{
+    padding: 8px;
+    color: #fff;
+    border-radius: 8px;
+    background-color: green;
+    cursor: pointer;
+}
+.add-button button:hover{
+    background-color: rgb(2, 58, 2);
+    cursor: pointer;
+}
+
+
+table{
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.create-form{
+    position: relative;
+}
+label{
+    font-size: 1.4rem;
+    position: absolute;
+    top: -2rem;
+}
+
+.update-form, .create-form{
+    display: none;
+}
+
+table .edit{
+    background-color: blue;
+    color: #fff;
+    padding: 1px 3px;
+}
+table .edit:hover{
+    background-color: rgb(36, 36, 97);
+}
+table .delete{
+    background-color: rgb(226, 25, 60);
+    color: #fff;
+    padding: 1px 3px;
+}
+table .delete:hover{
+    background-color: rgb(77, 16, 16);
+}
+
+
+/* validation css */
+.email-error{
+    color: red;
+    position: absolute;
+    top: 3.8rem;
+    right: 35rem;
+    
+}
+.name-error{
+    color: red;
+    position: absolute;
+    top: 3.8rem;
+    left: 5rem;
+    
+}
+.id-error{
+    color: red;
+    position: absolute;
+    top: 3.8rem;
+    left: 22rem;
+    
+}
+.contact-error{
+    color: red;
+    position: absolute;
+    top: 3.8rem;
+    right: 10rem;
+    
+}
+

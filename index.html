@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List Record</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  onload="readAll()">
+    <div class="container">
+        <h1>Student Resistration Rcord</h1>
+        <div class="form-container">
+            <!-- section add form -->
+            <form action="" class="create-form" onclick="validation">
+                <label for="name">Name :</label>
+                <input type="text" class="name">
+                <span class="name-error"></span>
+                <label for="studentid">Id :</label>
+                <input type="text" class="studentid">
+                <span class="id-error"></span>
+                <label for="email">Email :</label>
+                <input type="email" class="email">
+                <span class="email-error"></span> 
+                <label for="contactno">Contact No :</label>
+                <input type="text" class="contactno">
+                <span class="contact-error"></span>
+                <button type="button" onclick="add()">Create</button>
+            </form>
+            <!-- section form update -->
+            <form action="" class="update-form" >
+                <input type="text" hidden class="id">
+                <label for="name">Name :</label>
+                <input type="text" class="nname">
+                <span class="name-error"></span>
+                <label for="studentid">Id :</label>
+                <input type="text" class="sstudentid">
+                <span class="id-error"></span>
+                <label for="email">Email :</label>
+                <input type="email" class="eemail">
+                 <span class="id-error"></span>
+                <label for="contactno">Contact No :</label>
+                <input type="text" class="ccontactno">
+                <span class="contact-error"></span>
+                <button type="button" onclick="update()">Update</button>
+            </form>
+            <div class="add-button">
+                <button onclick="create()">Add +</button>
+            </div>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Student Id</th>
+                    <th>Email</th>
+                    <th>Contact No</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="data-table">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
