@@ -12,6 +12,14 @@ html{
 h1{
     color: #fff;
 }
+a{
+    background-color:rgb(32, 65, 94); ;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+}
 .container{
     height: 100vh;
     background-color: rgb(2, 17, 30);
